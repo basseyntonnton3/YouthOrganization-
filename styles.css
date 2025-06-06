@@ -169,139 +169,270 @@ body {
 
 /* About Section */
 .about {
-  padding: 4rem 2rem;
-  background-color: var(--light-bg);
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, var(--light-bg), white);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-logo:hover {
+  transform: scale(1.05);
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.about-header h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary-green);
 }
 
 .about-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.about-text {
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
-.main-description {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.about-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h3 {
+  color: var(--primary-green);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-card h3 i {
+  font-size: 1.3rem;
+}
+
+.main-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: var(--text-color);
 }
 
-.core-commitments,
-.partnerships,
-.mission-vision,
-.join-movement {
-  margin-bottom: 2rem;
+.core-commitments ul {
+  list-style: none;
+  padding: 0;
 }
 
-.core-commitments h3,
-.partnerships h3,
-.mission h3,
-.vision h3,
-.join-movement h3 {
-  color: var(--primary-green);
+.core-commitments li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
-.core-commitments ul,
-.partnerships ul {
-  list-style-type: none;
-  padding-left: 1.5rem;
-}
-
-.core-commitments li,
-.partnerships li {
-  margin-bottom: 0.8rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.core-commitments li:before,
-.partnerships li:before {
-  content: "•";
+.core-commitments li i {
   color: var(--primary-green);
-  position: absolute;
-  left: 0;
+  margin-top: 0.2rem;
+}
+
+.partnership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.partnership-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--light-bg);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.partnership-item:hover {
+  transform: translateX(5px);
+}
+
+.partnership-item i {
+  font-size: 1.5rem;
+  color: var(--primary-green);
 }
 
 .mission-vision {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
-.mission,
-.vision {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.join-movement {
-  background: var(--primary-green);
-  color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  margin-top: 2rem;
-}
-
-.join-movement h3 {
-  color: white;
-}
-
-.join-movement a {
-  color: white;
-  text-decoration: underline;
-}
-
-.join-movement a:hover {
-  color: var(--light-bg);
-}
-
-.stats {
+.stats-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .stat-item {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   padding: 1.5rem;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateX(5px);
 }
 
 .stat-item i {
   font-size: 2rem;
   color: var(--primary-green);
-  margin-bottom: 1rem;
 }
 
-.stat-item h3 {
-  font-size: 2rem;
+.stat-content h3 {
+  font-size: 1.8rem;
   color: var(--primary-green);
-  margin-bottom: 0.5rem;
+  margin: 0;
 }
 
-.stat-item p {
+.stat-content p {
+  margin: 0;
   color: var(--text-color);
+  font-size: 1rem;
+}
+
+.join-movement {
+  background: linear-gradient(135deg, var(--primary-green), #2c7a4d);
+  border-radius: 20px;
+  padding: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.join-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.join-content p {
   font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.join-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.join-buttons .cta-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-buttons .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.join-buttons .cta-button.secondary {
+  background: transparent;
+  border: 2px solid white;
+}
+
+@media (max-width: 1200px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-sidebar {
+    order: -1;
+  }
+
+  .mission-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+
   .mission-vision {
     grid-template-columns: 1fr;
   }
 
-  .stats {
+  .partnership-grid {
     grid-template-columns: 1fr;
+  }
+
+  .join-buttons {
+    flex-direction: column;
+  }
+
+  .about-logo {
+    width: 150px;
+  }
+
+  .about-header h2 {
+    font-size: 2rem;
   }
 }
 
