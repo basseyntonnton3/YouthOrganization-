@@ -169,45 +169,140 @@ body {
 
 /* About Section */
 .about {
-  padding: 5rem 10%;
-  background-color: var(--off-white);
-}
-
-.about h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  color: var(--primary-green);
+  padding: 4rem 2rem;
+  background-color: var(--light-bg);
 }
 
 .about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.about-text {
-  text-align: center;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.stats {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.about-text {
+  margin-bottom: 3rem;
+}
+
+.main-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.core-commitments,
+.partnerships,
+.mission-vision,
+.join-movement {
+  margin-bottom: 2rem;
+}
+
+.core-commitments h3,
+.partnerships h3,
+.mission h3,
+.vision h3,
+.join-movement h3 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.core-commitments ul,
+.partnerships ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.core-commitments li,
+.partnerships li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.core-commitments li:before,
+.partnerships li:before {
+  content: "•";
+  color: var(--primary-green);
+  position: absolute;
+  left: 0;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mission,
+.vision {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.join-movement {
+  background: var(--primary-green);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.join-movement h3 {
+  color: white;
+}
+
+.join-movement a {
+  color: white;
+  text-decoration: underline;
+}
+
+.join-movement a:hover {
+  color: var(--light-bg);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .stat-item {
   text-align: center;
-  flex: 1;
-  min-width: 200px;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stat-item i {
-  font-size: 2.5rem;
-  color: #3498db;
+  font-size: 2rem;
+  color: var(--primary-green);
   margin-bottom: 1rem;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Programs Section */
