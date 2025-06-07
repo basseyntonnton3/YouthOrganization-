@@ -802,7 +802,7 @@ body {
 
 .info-item i {
   font-size: 1.5rem;
-  color: #3498db;
+  color: var(--dark-green);
 }
 
 /* Footer */
