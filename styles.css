@@ -499,6 +499,73 @@ body {
   color: var(--text-color);
   font-size: 1rem;
 }
+.executives {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.executives h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.executive-intro {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #444;
+  font-size: 1.1em;
+}
+
+.executive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.executive-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.executive-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.executive-card h3 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+}
+
+.executive-card .position {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.executive-card .bio {
+  font-size: 0.95em;
+  margin: 10px 0 15px;
+  color: #555;
+}
+
+.executive-socials a {
+  margin: 0 8px;
+  font-size: 1.2em;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.executive-socials a:hover {
+  color: #007bff;
+}
 
 .join-movement {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
