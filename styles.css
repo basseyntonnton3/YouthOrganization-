@@ -567,6 +567,50 @@ body {
   color: #007bff;
 }
 
+.stakeholder-card {
+  background-color: #f3f3f3;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stakeholder-card:hover {
+  transform: translateY(-5px);
+}
+
+.stakeholder-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stakeholder-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.stakeholder-card p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.stakeholder-socials a {
+  margin: 0 5px;
+  font-size: 1.2em;
+  color: #3b5998;
+  transition: color 0.3s ease;
+}
+
+.stakeholder-socials a:hover {
+  color: #007bff;
+}
+
 .join-movement {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/NYAN RETREAT..jpg");
