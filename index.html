@@ -895,10 +895,18 @@
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="https://chat.whatsapp.com/HpyeR9e5abmIXAx6IRdXXh"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <p>&copy; 2024 Youth Organization. All rights reserved.</p>
+        <p>
+          &copy; <span id="copyright-year"></span> Youth Organization. All rights reserved.<br>
+          Website design by Ntonarch. 
+          <a href="https://wa.me/2348103562802?text=Hi%20Ntonarch%2C%20I%20am%20interested%20in%20your%20web%20design%20services" target="_blank" rel="noopener" style="color: var(--primary-green); text-decoration: underline;">Contact Ntonarch</a>
+        </p>
       </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      // Set copyright year automatically
+      document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
